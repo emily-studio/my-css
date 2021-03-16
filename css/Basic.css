@@ -1,0 +1,33 @@
+.active{
+    color:#a1915d;
+}
+.active:hover{
+    color: cadetblue;
+}
+.container .btn{
+    color:#a1915d;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    font-family: "adobe-caslon-pro", serif
+}
+
+.btn {
+    color: #a1915d;
+    font-family: "adobe-caslon-pro", serif;
+    margin-top: 18px;
+
+}
+.nav-item {
+
+    margin: 10px 20px;
+}
+.title{
+    color: #a1915d;
+    font-family: "adobe-caslon-pro", serif 
+}
+

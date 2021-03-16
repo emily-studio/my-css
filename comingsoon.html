@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Basic.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Coming soon</title>
+</head>
+<style>
+    * {
+        background: #CCD0D4;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    .navbar1 {
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        font-family: "adobe-caslon-pro", serif
+    }
+
+    h1.loader {
+        transform: translateY(5rem);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+        font-size: 4.6875em;
+        color: transparent;
+        letter-spacing: 0.01em;
+    }
+
+    .loader span {
+
+        text-shadow:
+            0 0 2px rgba(204, 208, 212, 0.9),
+            0 15px 25px rgba(0, 0, 0, 0.3),
+            0 -2px 3px rgba(0, 0, 0, 0.1),
+            0 -5px 10px rgba(255, 255, 255, 0.5),
+            0 5px 10px rgba(0, 0, 0, 0.3),
+            0 3px 4px rgba(255, 255, 255, 0.2),
+            0 0 20px rgba(255, 255, 255, 0.45);
+
+        animation: loading 0.85s ease-in-out infinite alternate;
+    }
+
+    @keyframes loading {
+        to {
+            text-shadow:
+                0 0 2px rgba(204, 208, 212, 0.2),
+                0 0 3px rgba(0, 0, 0, 0.02),
+                0 0 0 rgba(0, 0, 0, 0),
+                0 0 0 rgba(255, 255, 255, 0),
+                0 0 0 rgba(0, 0, 0, 0),
+                0 0 0 rgba(255, 255, 255, 0),
+                0 0 0 rgba(255, 255, 255, 0);
+        }
+    }
+
+    .loader span:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .loader span:nth-child(3) {
+        animation-delay: 0.30s;
+    }
+
+    .loader span:nth-child(4) {
+        animation-delay: 0.45s;
+    }
+
+    .loader span:nth-child(5) {
+        animation-delay: 0.60s;
+    }
+
+    .loader span:nth-child(6) {
+        animation-delay: 0.75s;
+    }
+
+    .loader span:nth-child(7) {
+        animation-delay: 0.90s;
+    }
+</style>
+
+
+<body>
+    <div class="jumbotron-fluid">
+
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="./home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./aboutme.html"><i class="fa fa-fw fa-user-circle"></i> About
+                    me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/html/Design.html"><i class="fa fa-fw  fa-lightbulb-o"></i>
+                    Design</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./login-page.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            </li>
+
+        </ul>
+        <h1 class="loader">
+            <span>c</span>
+            <span>O</span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            </br>
+            <span>S</span>
+            <span>O</span>
+            <span>O</span>
+            <span>N</span>
+        </h1>
+
+</body>
+
+</html>

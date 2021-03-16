@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Document</title>
+</head>
+<style>
+    .Design {
+
+        background-color: #9b9b9b;
+
+    }
+
+    .header {
+        width: 100%;
+        padding: 90px 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header h1 {
+        font-family: "adobe-caslon-pro", serif;
+        font-weight: 500;
+        font-size: 36px;
+        color: #84827b;
+        width: 73vw;
+    }
+
+    .top-container {
+        /* margin: 0 auto;
+        padding: 0; */
+        display: flex;
+
+    }
+
+
+    .date {
+        /* display: inline-block; */
+        margin: 0 0 8px 0;
+        font-size: 20px;
+
+    }
+
+    .Ph1 {
+        max-width: 720px;
+        margin-bottom: 100px;
+    }
+
+    .ph1-img {
+        width: 400px;
+        height: 650px;
+        width: 100%;
+    }
+
+
+    .article-content {
+
+        line-height: 1.4em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .article-link p {
+        /* display: inline-block; */
+        color: burlywood;
+
+    }
+
+    .article-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .arrow2 {
+        /* display: inline-block; */
+        margin-left: 10px;
+
+    }
+
+    .my {
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        animation: bounce;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+        /* don't forget to set a duration! */
+    }
+
+    .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+    }
+
+    /* This changes all the animations globally */
+    :root {
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+    }
+
+
+
+
+    /* .pic {
+        width: 100%;
+        overflow: hidden;
+        max-width: 360px;
+        height: 450px;
+    }
+
+    .pic-ctn {
+        margin-left: -850px;
+        width: 30vw;
+        height: 200px;
+    }
+
+    @keyframes display {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        10% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        20% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        30% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+    }
+
+    .pic-ctn {
+        position: relative;
+        margin-left: -80px;
+        width: 100vw;
+        height: 300px;
+        margin-top: 15vh;
+    }
+
+    .pic-ctn>img {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 100px);
+        opacity: 0;
+        animation: display 10s infinite;
+    }
+
+    img:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    img:nth-child(3) {
+        animation-delay: 4s;
+    }
+
+    img:nth-child(4) {
+        animation-delay: 6s;
+    }
+
+    img:nth-child(5) {
+        animation-delay: 8s;
+    } */
+</style>
+
+
+
+<body>
+
+
+    <div class="Design">
+        <div class="header">
+            <h1>Design</h1>
+        </div>
+        <div class="top-container">
+            <div class="top-container1">
+                <div class="Ph1">
+                    <p class="date">03 Feb. 2021</p>
+                    <img class="ph1-img" src="./html/img/IMG_4525.jpg">
+                    <h2>SHEEPSKIN<br />
+                        A UNIQUE EXPRESSION<br />
+                    </h2>
+                    <p class="article-content"> 刺青是種以暴力手段進行破壞的美感重建。
+                        「刺青會很痛嗎？」
+                        這是許多想刺青的人，常會詢問的問題。事實上每個人的痛感覺並不相同，以前
+                        較沒有現代化的工具，是用竹籤上綁上繡花針沾上墨汁，一針一針把圖案刺上
+                        去，所以稱之為「刺青」，或拿刀片便刺出想要的圖形，那種痛可說是椎心刺骨。
+                        現在多以專業刺青電動器械（紋身槍），機種自製或由美日進口，刺青的疼痛也
+                        就降為「忍得住」的那種等級，也較安全快捷...</p>
+                    <a class="article-link" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+
+
+                <h1 id='my' class="my animate__animated animate__bounce">An animated element</h1>
+                <button id="on"> on</button>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.js"
+                    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+                <script>
+                    $('#my').click(function () {
+                        $('#id').css('animation', 'bounce').toggle();
+
+                    })
+
+
+    //                 <!-- <div class="pic-ctn">
+    //     <img src="/ｗｅｂ/html/img/S__20381719.jpg" alt="" class="pic">
+    //     <img src="/ｗｅｂ/html/img/S__20381721.jpg" alt="" class="pic">
+    //     <img src="/ｗｅｂ/html/img/S__20381724.jpg" alt="" class="pic">
+    //     <img src="/ｗｅｂ/html/img/S__20381729.jpg" alt="" class="pic">
+    //     <img src="/ｗｅｂ/html/img/S__20381735.jpg" alt="" class="pic">
+    // </div> -->
+
+
+
+</body >
+
+</html >

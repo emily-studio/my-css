@@ -1,0 +1,83 @@
+/* *{
+    margin: 0 auto;
+    padding: 0;
+background-color: black;
+} */
+.nav{
+    font-family: "adobe-caslon-pro", serif; 
+}
+
+
+
+   /* font-family: "adobe-caslon-pro", serif; 
+   font-family: "cwTeXKai", serif;*/
+
+
+.container .btn{
+    color:#a1915d;
+}
+
+.bc-img-text {
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+ 
+}
+
+/* @media screen and (min-width:375px) {
+
+    .bc-img-text {
+        text-align: center;
+        margin-right: -380px;
+    }
+
+} */
+
+
+@media screen and (min-width:768px) {
+    .bc {
+        position: relative;
+    }
+
+    .bc-img {
+        width: 50%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+
+    .bc-img-text {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        bottom: -50%;
+        width: 900px;
+
+    }
+
+    .text-title {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .text-top {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 50px;
+    }
+
+    .text-down {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

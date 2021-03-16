@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- ----link bs------ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Contact</title>
+</head>
+<style>
+    @media screen and (max-width:768px) {
+        body {
+            background: white !important;
+            ;
+        }
+
+        .navbar1 {
+            display: none;
+        }
+
+        .navbar2 {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.623);
+            font-family: "adobe-caslon-pro", serif;
+        }
+
+        .header {
+            padding-top: 8rem;
+
+        }
+
+        .ellipses__outer--thin,
+        .ellipses__outer--thick {
+            width: 80%;
+            height: 80%;
+
+        }
+
+        .follow {
+            transform: translate(15rem, -3.125rem);
+        }
+
+
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+        .navbar2 {
+            display: none;
+
+        }
+
+        .navbar1 {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            color: #a1915d;
+            font-family: "adobe-caslon-pro", serif
+        }
+
+        .active:hover {
+            color: cadetblue;
+        }
+
+        .nav-item {
+            margin: 20px 20px;
+        }
+
+        .heading {
+            padding-top: 150PX;
+        }
+    }
+</style>
+
+
+<body>
+    <!-- -------------TABLE---------- -->
+    <div class="navbar navbar1  navbar-fixed-top">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="./home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./aboutme.html"><i class="fa fa-fw fa-user-circle"></i> About
+                    me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./Design.html"><i class="fa fa-fw  fa-lightbulb-o"></i>
+                    Design</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                    Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- -----------IPHONE--------------- -->
+    <nav class="navbar navbar2  navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Design.html">Design</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Booking</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                    </div>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container__item landing-page-container ">
+        <div class="content__wrapper">
+
+            <header class="header">
+
+                <h1 class="heading header__item">Contact</h1>
+                <p class="follow">follow us</p>
+            </header>
+
+            <div class="ellipses-container">
+
+                <div class="ellipses ellipses__outer--thin">
+
+                    <div class="ellipses ellipses__orbit"></div>
+
+                </div>
+
+                <div class="ellipses ellipses__outer--thick"></div>
+            </div>
+
+        </div>
+        <p class="follow-us">follow us</p>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        console.log('width', $('.ellipses-container').width())
+        $('.ellipses-container').height($('.ellipses-container').width())
+        $(window).resize(function () {
+            $('.ellipses-container').height($('.ellipses-container').width())
+        })
+
+
+    </script>
+
+</body>

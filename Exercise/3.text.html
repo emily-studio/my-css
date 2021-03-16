@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aboutme.css">
+    <link rel="stylesheet" href="/css/Basic.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+    .container {
+        display: flex;
+    }
+
+    .icon-title {
+        color: #a1915d;
+        text-align: center;
+    }
+
+    .line {
+
+        text-align: center;
+        height: 80px;
+    }
+
+    .icon {
+        text-align: center;
+        color: #ddd1aa;
+    }
+
+    .num {
+        color: #a1915d;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="boxgroup col-12 col-sm-1  col-md-6 col-lg-3 col-xl-3 mx-0">
+            <div class="icon-title">
+                <h1>Follow</h1>
+            </div>
+            <div class="line"><img src="/photo/arrow.svg" alt=""></div>
+            <div class="icon">
+                <i class="fa fa-fw fa-5x fa-heart" aria-hidden="true"></i>
+            </div>
+            <div class="num num1">
+                <p>0</p>
+            </div>
+        </div>
+        <div class="boxgroup col-12 col-sm-1  col-md-6 col-lg-3 col-xl-3 mx-0">
+            <div class="icon-title">
+                <h1>Posts</h1>
+            </div>
+            <div class="line"><img src="/photo/arrow.svg" alt=""></div>
+            <div class="icon">
+                <i class="fa fa-fw fa-5x fa-heart" aria-hidden="true"></i>
+            </div>
+            <div class="num num2">
+                <p>0</p>
+            </div>
+        </div>
+        <div class="boxgroup col-12 col-sm-1  col-md-6 col-lg-3 col-xl-3 mx-0">
+            <div class="icon-title">
+                <h1>Likes</h1>
+            </div>
+            <div class="line"><img src="/photo/arrow.svg" alt=""></div>
+            <div class="icon">
+                <i class="fa fa-fw fa-5x fa-heart" aria-hidden="true"></i>
+            </div>
+            <div class="num num3">
+                <p>0</p>
+            </div>
+        </div>
+        <div class="boxgroup col-12 col-sm-1 col-md-6 col-lg-3 col-xl-3 mx-0">
+            <div class="icon-title">
+                <h1>Book</h1>
+            </div>
+            <div class="line"><img src="/photo/arrow.svg" alt=""></div>
+            <div class="icon">
+                <i class="fa fa-fw fa-5x fa-heart" aria-hidden="true"></i>
+            </div>
+            <div class="num num4">
+                <p>0</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+
+        let nowNumber = 0;
+        setInterval(() => {
+            if (nowNumber < 1000) {
+                nowNumber += parseInt(1000 / 15);
+                $('.num.num3').text(nowNumber);
+            }
+            else {
+                $('.num.num3').text('1000');
+            }
+        }, 50);
+
+        let nowNumber1 = 0;
+        setInterval(() => {
+            if (nowNumber1 < 22000) {
+                nowNumber1 += parseInt(22000 / 15);
+                $('.num.num1').text(nowNumber1);
+            }
+            else {
+                $('.num.num1').text('22000');
+            }
+        }, 50);
+        let nowNumber2 = 0;
+        setInterval(() => {
+            if (nowNumber2 < 243) {
+                nowNumber2 += parseInt(243 / 15);
+                $('.num.num2').text(nowNumber1);
+            }
+            else {
+                $('.num.num2').text('243');
+            }
+        }, 50);
+        let nowNumber3 = 0;
+        setInterval(() => {
+            if (nowNumber3 < 32) {
+                nowNumber3 += parseInt(32 / 15);
+                $('.num.num4').text(nowNumber1);
+            }
+            else {
+                $('.num.num4').text('32');
+            }
+        }, 50);
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

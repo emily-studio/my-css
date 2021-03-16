@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----link css------ -->
+    <link rel="stylesheet" href="./css/Basic.css">
+
+    <!-- ---- link icon fontawesome------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- ----link bs------ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>ABOUT ME</title>
+</head>
+<style>
+    body {
+
+        background: -webkit-linear-gradient(right, black, gray);
+        background-repeat: no-repeat;
+    }
+
+    .bc-img-text {
+        text-align: center;
+        height: 400px;
+        color: #a1915d;
+        line-height: 2;
+        font-family: "cwTeXKai", serif;
+        background-color: #4d4d4dbd;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.623);
+        font-family: "adobe-caslon-pro", serif
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    .btn {
+        color: #a1915d;
+        font-family: "adobe-caslon-pro", serif;
+        margin-top: 18px;
+
+    }
+
+    .nav-item {
+        margin: 10px 20px;
+    }
+
+    .text-title {
+        font-family: "adobe-caslon-pro", serif;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-top {
+        padding: 0 20px;
+        font-family: "cwTeXKai", serif;
+
+    }
+
+    .bc2-img-text {
+        text-align: center;
+        height: 400px;
+        color: #a1915d;
+        line-height: 2;
+        font-family: "cwTeXKai", serif;
+        background-color: #4d4d4dbd;
+    }
+
+    .bc2-img {
+        margin-top: -10px;
+    }
+
+
+    .footer-wrap {
+        width: 100%;
+        height: 200px;
+        margin-top: 50px;
+        background: -webkit-linear-gradient(right, black, gray);
+        background-repeat: no-repeat;
+        margin-bottom: -80px;
+        transform: skew(0deg, -5deg) translateY(1300px);
+    }
+
+    .footer {
+        margin-top: 1300px;
+        font-family: "adobe-caslon-pro", serif;
+        font-family: "cwTeXKai", serif;
+        padding-top: 200px;
+        background-color: #a5a08f8e;
+        padding-bottom: 10px;
+
+    }
+
+    .info {
+        color: #beb083;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .credits {
+        margin-top: 50px;
+        color: #524e41;
+        text-align: center;
+
+    }
+
+    .link {
+        color: #beb083;
+        text-decoration: none;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link:hover {
+        color: cadetblue;
+    }
+
+    .footer-icon svg {
+        margin: 10px;
+    }
+
+
+
+
+
+    @media screen and (min-width:375px) and (max-width:767px) {
+        .iconbox {
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .text-down {
+            margin-top: 10px;
+        }
+
+        .bc2-text-title,
+        .bc2-text-top {
+            transform: translateY(50px);
+        }
+
+        .footer-wrap {
+            width: 100%;
+            height: 100px;
+            margin-top: 50px;
+            background: -webkit-linear-gradient(right, black, gray);
+            background-repeat: no-repeat;
+            margin-bottom: -80px;
+            transform: skew(0deg, -5deg) translateY(2100px);
+        }
+
+        .footer {
+            margin-top: 2100px;
+            font-family: "adobe-caslon-pro", serif;
+            font-family: "cwTeXKai", serif;
+            padding-top: 200px;
+            background-color: #a5a08f8e;
+            padding-bottom: 10px;
+
+        }
+
+        .navbar1 {
+            display: none;
+        }
+
+        .navbar2 {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.623);
+            font-family: "adobe-caslon-pro", serif;
+        }
+    }
+
+    @media screen and (min-width:770px) {
+
+        .bc {
+            position: relative;
+        }
+
+        .bc-img {
+            width: 50%;
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+
+
+        .navbar2 {
+            display: none;
+
+
+        }
+
+        .navbar1 {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.623);
+            font-family: "adobe-caslon-pro", serif
+        }
+
+        .nav-item {
+            transform: translateX(30rem);
+        }
+
+        .bc-img-text {
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            bottom: 10%;
+            margin-left: 150px;
+            margin-bottom: -200px;
+            width: 850px;
+            height: 500px;
+            color: #a1915d;
+            background-color: #4d4d4dbd;
+        }
+
+        .text-title {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .text-top {
+            width: 50%;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            font-size: 18px;
+            color: #ddd1aa;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        /* ------bc2------ */
+
+        .bc2 {
+            position: relative;
+        }
+
+        .bc2-img {
+            width: 50%;
+            margin-left: 20%;
+            margin-top: 30%;
+
+        }
+
+        .bc2-img-text {
+            position: relative;
+            width: 750px;
+            color: #a1915d;
+            background-color: #4d4d4dbd;
+            margin-top: -25%;
+            margin-left: 85%;
+        }
+
+        .bc2-img {
+            width: 100%;
+
+        }
+
+        .bc2-text-title {
+            transform: translatey(60px);
+        }
+
+        .bc2-text-top {
+            width: 50%;
+            margin: 0 auto;
+            color: #ddd1aa;
+            font-size: 18px;
+            line-height: 2;
+            transform: translatey(60px);
+        }
+
+        .iconbox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            transform: translateX(400px);
+            margin-top: 100px;
+
+        }
+
+        .boxgroup {
+            margin: 0 100px;
+            margin-bottom: 400px;
+        }
+
+    }
+
+    /* -----footer---- */
+
+    .icon-title {
+        color: #a1915d;
+        text-align: center;
+    }
+
+    .line {
+
+        text-align: center;
+        height: 90px;
+    }
+
+    .icon {
+        text-align: center;
+        color: #ddd1aa;
+
+    }
+
+    .num {
+        color: #a1915d;
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <!-- ------table navbar----- -->
+        <div class="navbar navbar1  navbar-fixed-top">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./aboutme.html"><i class="fa fa-fw fa-user-circle"></i> About
+                        me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Design.html"><i class="fa fa-fw  fa-lightbulb-o"></i>
+                        Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./comingsoon.html"><i class="fa fa-fw fa-calendar"
+                            aria-hidden="true"></i>
+                        Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./login-page.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <nav class="navbar navbar2  navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutme.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Design.html">Design</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./comingsoon.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./comingsoon.html">Booking</a>
+                            <a class="dropdown-item" href="./login-page.html">Contact</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <div class="bc">
+            <div class="bc-img">
+                <img class="img" src="./img/bc.png" alt="">
+            </div>
+
+            <div class="bc-img-text">
+                <h1 class="text-title">About me</h1>
+                <p class="text-top">
+
+                    刺青是種以暴力手段進行破壞的美感重建。
+                    「刺青會很痛嗎？」
+                    這是許多想刺青的人，常會詢問的問題。事實上每個人的痛感覺並不相同，以前
+                    較沒有現代化的工具，是用竹籤上綁上繡花針沾上墨汁，一針一針把圖案刺上
+                    去，所以稱之為「刺青」，或拿刀片便刺出想要的圖形，那種痛可說是椎心刺骨。
+                    現在多以專業刺青電動器械（紋身槍），機種自製或由美日進口，刺青的疼痛也
+                    就降為「忍得住」的那種等級，也較安全快捷。
+
+                </p>
+                <p class="text-down">
+                    <a class="btn btn-light btn-lg" href="aboutme.html" role="button">Read more</a>
+
+                </p>
+                <div class="bc2">
+                    <div class="bc2-img">
+                        <img class="img" src="./img/bc2.png" alt="">
+                    </div>
+
+                </div>
+                <div class="bc2-img-text">
+                    <h1 class="bc2-text-title">Daily</h1>
+                    <p class="bc2-text-top">
+
+                        刺青是種以暴力手段進行破壞的美感重建。
+                        事實上每個人的痛感覺並不相同，以前較沒有現代化的工具，是用竹籤上綁上繡花針沾上墨汁，一針一針把圖案刺上去，所以稱之為「刺青」，或拿刀片便刺出想要的圖形，那種痛可說是椎心刺骨。
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="iconbox">
+                    <div class="boxgroup ">
+                        <div class="icon-title">
+                            <h1>Follow</h1>
+                        </div>
+                        <div class="line"><img src="./img/arrow.png" alt=""></div>
+                        <div class="icon">
+                            <i class="fa fa-fw fa-4x fa-child" aria-hidden="true"></i>
+                        </div>
+                        <div class="num num1">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="boxgroup">
+                        <div class="icon-title">
+                            <h1>Posts</h1>
+                        </div>
+                        <div class="line"><img src="./img/arrow.png" alt=""></div>
+                        <div class="icon">
+                            <i class="fa fa-fw fa-4x fa-clipboard" aria-hidden="true"></i>
+                        </div>
+                        <div class="num num2">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="boxgroup ">
+                        <div class="icon-title">
+                            <h1>Likes</h1>
+                        </div>
+                        <div class="line"><img src="./img/arrow.png" alt=""></div>
+                        <div class="icon">
+                            <i class="fa fa-fw fa-4x fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="num num3">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="boxgroup">
+                        <div class="icon-title">
+                            <h1>Book</h1>
+                        </div>
+                        <div class="line"><img src="./img/arrow.png" alt=""></div>
+                        <div class="icon">
+                            <i class="fa fa-fw fa-4x fa-calendar" aria-hidden="true"></i>
+                        </div>
+                        <div class="num num4">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------footer------------ -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+    </div>
+    <footer class="footer">
+
+        <div class="info">
+            <h3>Customized & Contact </h3>
+            <p> phone : 0956784159</p>
+            <p>E-mail : joshua__164@gmail.com</p>
+            <p>Address : 新北市永和區博愛街19巷5號1樓</p>
+            <h4>Follow us</h4>
+
+        </div>
+        <div>
+            <div class="footer-icon">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img"
+                    xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512"
+                    class="svg-inline--fa fa-instagram fa-w-14 fa-3x" id="ig">
+                    <path fill="#524e41"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        class=""></path>
+                </svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                    xmlns="http://www.w3.org/2000/svg" width="30px" height="27px" viewBox="0 0 320 512"
+                    class="svg-inline--fa fa-facebook-f fa-w-10 fa-3x">
+                    <path fill="#524e41"
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        class=""></path>
+                </svg>
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img"
+                    xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-envelope fa-w-16 fa-3x">
+                    <path fill="#524e41"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                        class=""></path>
+                </svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="30px"
+                    class="svg-inline--fa fa-twitter fa-w-16 fa-3x">
+                    <path fill="#524e41"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                        class=""></path>
+                </svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-messenger" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="30px"
+                    class="svg-inline--fa fa-facebook-messenger fa-w-16 fa-3x">
+                    <path fill="#524e41"
+                        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
+                        class=""></path>
+                </svg>
+
+            </div>
+
+            <p class="credits">
+                Joshua Tatto Stuido
+                <a class="link" href="https://www.instagram.com/joshua__164/">@joshua_164</a>
+            </p>
+
+        </div>
+        <!-- </footer>
+    <div class="footer">
+    </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+        <script>
+
+            $(window).scroll(function () {
+                console.log('scrollTop', $('footer').offset())
+                let windowscroll = $(this).scrollTop();
+                if (windowscroll >= 1000) {
+                    startNumberTick();
+                }
+            });
+
+            let interval1;
+
+            function startNumberTick() {
+                let nowNumber = 0;
+                interval1 = setInterval(() => {
+                    if (nowNumber < 5000) {
+                        nowNumber += parseInt(5000 / 10);
+                        $('.num.num3').text(nowNumber);
+                    }
+                    else {
+                        $('.num.num3').text('5000');
+                        clearInterval(interval1);
+                    }
+                }, 100);
+
+                let nowNumber1 = 0;
+                interval1 = setInterval(() => {
+                    if (nowNumber1 < 22000) {
+                        nowNumber1 += parseInt(22000 / 30);
+                        $('.num.num1').text(nowNumber1);
+                    }
+                    else {
+                        $('.num.num1').text('22000');
+                        clearInterval(interval1);
+                    }
+                }, 50);
+
+                let nowNumber2 = 0;
+                interval1 = setInterval(() => {
+                    if (nowNumber2 < 243) {
+                        nowNumber2 += parseInt(243 / 20);
+                        $('.num.num2').text(nowNumber1);
+                    }
+                    else {
+                        $('.num.num2').text('243');
+                        clearInterval(interval1);
+                    }
+                }, 30);
+
+
+                let nowNumber3 = 0;
+                interval1 = setInterval(() => {
+                    if (nowNumber3 < 100) {
+                        nowNumber3 += parseInt(100 / 20);
+                        $('.num.num4').text(nowNumber1);
+                    }
+                    else {
+                        $('.num.num4').text('100');
+                        clearInterval(interval1);
+                    }
+                }, 30);
+            }
+
+        </script>
+
+
+
+</html>
+</body>
